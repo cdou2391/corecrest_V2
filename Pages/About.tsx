@@ -30,11 +30,9 @@ export default function About() {
   ];
 
   const milestones = [
-    { year: '2019', title: 'Founded in Kigali', description: 'CoreCrest started with a mission to empower local businesses' },
-    { year: '2020', title: 'First Major Client', description: 'Delivered our first enterprise-scale web application' },
-    { year: '2021', title: 'Team Expansion', description: 'Grew to a team of 10+ skilled professionals' },
-    { year: '2022', title: 'SaaS Launch', description: 'Launched our first proprietary SaaS products' },
-    { year: '2023', title: 'Regional Growth', description: 'Expanded services across East Africa' },
+    { year: '2023', title: 'Founded', description: 'CoreCrest started with a mission to help small businesses fix tech weak points' },
+    { year: 'Feb 2024', title: 'First Major Client', description: 'Secured our first major client, marking a significant milestone' },
+    { year: 'Feb 2026', title: 'Umwirondoro SaaS Launch', description: 'Planned launch of our Umwirondoro SaaS platform' },
   ];
 
   return (
@@ -264,7 +262,7 @@ export default function About() {
               Our Journey
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4">
-              Growing Together Since 2019
+              Our Journey
             </h2>
           </motion.div>
 
@@ -272,7 +270,7 @@ export default function About() {
             {/* Timeline Line */}
             <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-700 to-green-600" />
 
-            <div className="grid md:grid-cols-5 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               {milestones.map((milestone, index) => (
                 <motion.div
                   key={milestone.year}
