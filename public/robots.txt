@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://corecrest.tech/sitemap.xml
+
