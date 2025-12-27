@@ -50,8 +50,8 @@ export default function About() {
       />
       <div className="pt-24">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-slate-50 via-white to-green-50/30 overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-green-600/10 to-green-700/10 rounded-full blur-3xl" />
+      <section className="relative py-24 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-teal-600/10 to-teal-700/10 rounded-full blur-3xl" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -60,7 +60,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+              <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
                 About CoreCrest
               </span>
               <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4 mb-6">
@@ -113,7 +113,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-green-700 to-green-800 rounded-3xl p-8 md:p-12 text-white"
+              className="bg-gradient-to-br from-teal-700 to-teal-800 rounded-3xl p-8 md:p-12 text-white"
             >
               <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-white" />
@@ -132,7 +132,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-gradient-to-br from-green-700 to-green-900 rounded-3xl p-8 md:p-12 text-white"
+              className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-3xl p-8 md:p-12 text-white"
             >
               <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <Eye className="w-7 h-7 text-white" />
@@ -157,7 +157,7 @@ export default function About() {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               Our Philosophy
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mt-4 mb-6">
@@ -216,7 +216,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               Our Values
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mt-4">
@@ -258,7 +258,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               Our Journey
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4">
@@ -268,7 +268,7 @@ export default function About() {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-700 to-green-600" />
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-700 to-teal-600" />
 
             <div className="grid md:grid-cols-3 gap-8">
               {milestones.map((milestone, index) => (
@@ -316,7 +316,7 @@ export default function About() {
             </p>
             <Link
               to={createPageUrl('BookConsultation')}
-              className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-green-700/25"
+              className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-teal-700/25"
             >
               Get a 2-Week Growth Diagnostic
               <ArrowRight className="w-5 h-5" />

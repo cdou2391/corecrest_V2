@@ -22,7 +22,7 @@ export default function NotFound() {
         canonicalUrl="https://corecrest.tech/404"
         noindex={true}
       />
-      <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50/30">
+      <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ export default function NotFound() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="mb-8 flex justify-center"
             >
-              <div className="w-24 h-24 gradient-bg rounded-full flex items-center justify-center shadow-lg shadow-green-600/25">
+              <div className="w-24 h-24 gradient-bg rounded-full flex items-center justify-center shadow-lg shadow-teal-600/25">
                 <AlertCircle className="w-12 h-12 text-white" />
               </div>
             </motion.div>
@@ -81,7 +81,7 @@ export default function NotFound() {
             >
               <Link
                 to={createPageUrl('Home')}
-                className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-green-700/25"
+                className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-teal-700/25"
               >
                 <Home className="w-5 h-5" />
                 Go to Homepage
@@ -103,7 +103,7 @@ export default function NotFound() {
               className="bg-white rounded-3xl p-8 shadow-xl border border-slate-200/50"
             >
               <div className="flex items-center gap-2 mb-6 justify-center">
-                <Search className="w-5 h-5 text-green-600" />
+                <Search className="w-5 h-5 text-teal-600" />
                 <h3 className="text-xl font-semibold text-slate-900">Popular Pages</h3>
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -116,7 +116,7 @@ export default function NotFound() {
                   <Link
                     key={link.page}
                     to={createPageUrl(link.page as any)}
-                    className="text-center px-4 py-3 bg-slate-50 hover:bg-green-50 rounded-xl transition-colors text-slate-700 hover:text-green-700 font-medium border border-slate-200 hover:border-green-200"
+                    className="text-center px-4 py-3 bg-slate-50 hover:bg-teal-50 rounded-xl transition-colors text-slate-700 hover:text-teal-700 font-medium border border-slate-200 hover:border-teal-200"
                   >
                     {link.name}
                   </Link>

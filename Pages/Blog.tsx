@@ -18,10 +18,10 @@ const categoryLabels: Record<string, string> = {
 };
 
 const categoryColors: Record<string, string> = {
-  technology: 'bg-green-200 text-green-700',
-  saas: 'bg-green-200 text-green-700',
+  technology: 'bg-teal-200 text-teal-700',
+  saas: 'bg-teal-200 text-teal-700',
   web_design: 'bg-orange-100 text-orange-700',
-  it_strategy: 'bg-green-200 text-green-700',
+  it_strategy: 'bg-teal-200 text-teal-700',
   digital_transformation: 'bg-pink-100 text-pink-700',
   custom_software: 'bg-blue-100 text-blue-700',
 };
@@ -81,7 +81,7 @@ export default function Blog() {
         twitterDescription="Stay updated with the latest trends, tips, and insights on technology, web development, SaaS, and digital transformation from CoreCrest."
         canonicalUrl="https://corecrest.tech/blog"
       />
-      <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-200/30">
+      <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-200/30">
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,7 +91,7 @@ export default function Blog() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               Our Blog
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4 mb-6">
@@ -128,7 +128,7 @@ export default function Blog() {
                         </Badge>
                         <span className="text-sm text-slate-500">Featured</span>
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 hover:text-green-600 transition-colors">
+                      <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 hover:text-teal-600 transition-colors">
                         {featuredPost.title}
                       </h2>
                       <p className="text-slate-600 mb-6 line-clamp-3">
@@ -203,7 +203,7 @@ export default function Blog() {
                           {categoryLabels[post.category]}
                         </Badge>
                       </div>
-                      <h3 className="text-xl font-semibold text-slate-900 mb-3 hover:text-green-600 transition-colors line-clamp-2">
+                      <h3 className="text-xl font-semibold text-slate-900 mb-3 hover:text-teal-600 transition-colors line-clamp-2">
                         {post.title}
                       </h3>
                       <p className="text-slate-600 text-sm mb-4 line-clamp-2 flex-grow">
@@ -214,7 +214,7 @@ export default function Blog() {
                           <Calendar className="w-4 h-4" />
                           {format(new Date(post.created_date), 'MMM d, yyyy')}
                         </div>
-                        <span className="text-green-600 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all">
+                        <span className="text-teal-600 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all">
                           Read more
                           <ArrowRight className="w-4 h-4" />
                         </span>

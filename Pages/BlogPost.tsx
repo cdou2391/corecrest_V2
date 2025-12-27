@@ -21,10 +21,10 @@ const categoryLabels: Record<string, string> = {
 };
 
 const categoryColors: Record<string, string> = {
-  technology: 'bg-green-200 text-green-700',
-  saas: 'bg-green-200 text-green-700',
+  technology: 'bg-teal-200 text-teal-700',
+  saas: 'bg-teal-200 text-teal-700',
   web_design: 'bg-orange-100 text-orange-700',
-  it_strategy: 'bg-green-200 text-green-700',
+  it_strategy: 'bg-teal-200 text-teal-700',
   digital_transformation: 'bg-pink-100 text-pink-700',
   custom_software: 'bg-blue-100 text-blue-700',
 };
@@ -351,7 +351,7 @@ export default function BlogPost() {
       <div className="pt-24 min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-slate-900 mb-4">Post not found</h1>
-          <Link to={createPageUrl('Blog')} className="text-green-600 hover:underline">
+          <Link to={createPageUrl('Blog')} className="text-teal-600 hover:underline">
             ← Back to Blog
           </Link>
         </div>
@@ -569,7 +569,7 @@ export default function BlogPost() {
                   <strong className="text-slate-900 font-semibold">{children}</strong>
                 ),
                 blockquote: ({ children }) => (
-                  <blockquote className="border-l-4 border-green-700 pl-6 py-2 my-4 bg-slate-50 rounded-r-lg">
+                  <blockquote className="border-l-4 border-teal-700 pl-6 py-2 my-4 bg-slate-50 rounded-r-lg">
                     {children}
                   </blockquote>
                 ),
@@ -620,7 +620,7 @@ export default function BlogPost() {
                   
                   if (hasH3) {
                     return (
-                      <div className="bg-gradient-to-br from-green-50 to-slate-50 border-2 border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-green-300 transition-all" {...props}>
+                      <div className="bg-gradient-to-br from-teal-50 to-slate-50 border-2 border-teal-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-teal-300 transition-all" {...props}>
                         {children}
                       </div>
                     );
@@ -635,7 +635,7 @@ export default function BlogPost() {
                   </div>
                 ),
                 thead: ({ children }) => (
-                  <thead className="bg-green-600 text-white">
+                  <thead className="bg-teal-600 text-white">
                     {children}
                   </thead>
                 ),
@@ -665,7 +665,7 @@ export default function BlogPost() {
                     return (
                       <Link
                         to={href}
-                        className="text-green-700 hover:text-green-800 underline font-medium"
+                        className="text-teal-700 hover:text-teal-800 underline font-medium"
                         {...props}
                       >
                         {children}
@@ -678,7 +678,7 @@ export default function BlogPost() {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-green-700 hover:text-green-800 underline font-medium"
+                      className="text-teal-700 hover:text-teal-800 underline font-medium"
                       {...props}
                     >
                       {children}
@@ -704,7 +704,7 @@ export default function BlogPost() {
               </div>
               <Link
                 to={createPageUrl('Blog')}
-                className="text-green-700 hover:text-green-800 font-medium flex items-center gap-2"
+                className="text-teal-700 hover:text-teal-800 font-medium flex items-center gap-2"
               >
                 View all posts
                 <ArrowRight className="w-4 h-4" />
@@ -730,7 +730,7 @@ export default function BlogPost() {
             </p>
             <Link
               to={createPageUrl('BookConsultation')}
-              className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-green-700/25"
+              className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-teal-700/25"
             >
               Book Free Consultation
               <ArrowRight className="w-5 h-5" />

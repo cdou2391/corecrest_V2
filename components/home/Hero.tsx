@@ -8,9 +8,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-green-50/30" />
-      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-gradient-to-br from-green-600/20 to-green-700/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-green-600/10 to-green-700/10 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-teal-50/30" />
+      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-600/20 to-teal-700/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-teal-600/10 to-teal-700/10 rounded-full blur-3xl" />
       
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
@@ -24,7 +24,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-              Fix the tech weak points that are costing your business customers, time, and money.
+              Make Technology Work for Your Business.
             </h1>
             <h2 className="sr-only">Innovation at the Heart of Africa — Websites & Tech Solutions That Help Small Businesses Grow</h2>
 
@@ -35,16 +35,16 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <Link
                 to={createPageUrl('BookConsultation')}
-                className="gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-600/25"
+                className="gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-lg shadow-teal-600/25"
               >
                 Get a 2-Week Growth Diagnostic
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to={createPageUrl('Services')}
-                className="bg-white text-slate-900 px-8 py-4 rounded-full font-medium border-2 border-slate-200 hover:border-green-600 transition-all flex items-center justify-center gap-2"
+                className="bg-white text-slate-900 px-8 py-4 rounded-full font-medium border-2 border-slate-200 hover:border-teal-600 transition-all flex items-center justify-center gap-2"
               >
-                <Play className="w-5 h-5 text-green-600" />
+                <Play className="w-5 h-5 text-teal-600" />
                 See what we improve first
               </Link>
             </div>
@@ -58,15 +58,15 @@ export default function Hero() {
               <h3 className="text-lg font-semibold text-slate-900 mb-4">Practical, business-first delivery</h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-slate-600">
-                  <span className="text-green-600 mt-1">•</span>
+                  <span className="text-teal-600 mt-1">•</span>
                   <span>Outcome-driven recommendations, not generic packages</span>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-600">
-                  <span className="text-green-600 mt-1">•</span>
+                  <span className="text-teal-600 mt-1">•</span>
                   <span>Fixed-scope diagnostics to reduce decision risk</span>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-600">
-                  <span className="text-green-600 mt-1">•</span>
+                  <span className="text-teal-600 mt-1">•</span>
                   <span>Clean implementation with documentation and handover</span>
                 </li>
               </ul>
@@ -119,8 +119,8 @@ export default function Hero() {
                 className="absolute -right-4 bottom-1/4 bg-white rounded-2xl p-4 shadow-xl shadow-slate-900/10"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-green-200 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-12 h-12 bg-teal-200 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>

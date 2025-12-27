@@ -22,7 +22,7 @@ export default function ProblemAwareness() {
           className="max-w-3xl mx-auto"
         >
           <div className="flex items-center gap-3 mb-6">
-            <AlertCircle className="w-6 h-6 text-green-600" />
+            <AlertCircle className="w-6 h-6 text-teal-600" />
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
               Signs your tech is costing you money
             </h2>
@@ -38,7 +38,7 @@ export default function ProblemAwareness() {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-start gap-3 text-slate-700"
               >
-                <span className="text-green-600 mt-1 flex-shrink-0">•</span>
+                <span className="text-teal-600 mt-1 flex-shrink-0">•</span>
                 <span>{problem}</span>
               </motion.li>
             ))}

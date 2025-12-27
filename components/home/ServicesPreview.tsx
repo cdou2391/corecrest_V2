@@ -9,33 +9,33 @@ const services = [
     icon: Globe,
     title: 'Websites That Convert',
     description: 'Get a website that turns visitors into enquiries, bookings, or sales — built around your customer journey, not just design.',
-    color: 'from-green-700 to-green-600',
-    bgColor: 'bg-green-200',
-    iconColor: 'text-green-600',
+    color: 'from-teal-700 to-teal-600',
+    bgColor: 'bg-teal-200',
+    iconColor: 'text-teal-600',
   },
   {
     icon: Code2,
     title: 'Custom Web Apps & Internal Tools',
     description: 'Replace spreadsheets, email chains, and manual processes with simple tools that save time and reduce mistakes.',
-    color: 'from-green-600 to-green-800',
-    bgColor: 'bg-green-100',
-    iconColor: 'text-green-700',
+    color: 'from-teal-600 to-teal-800',
+    bgColor: 'bg-teal-100',
+    iconColor: 'text-teal-700',
   },
   {
     icon: Cloud,
     title: 'Automation & Integrations',
     description: 'Connect the tools you already use and automate repetitive tasks so your team can focus on work that actually grows the business.',
-    color: 'from-green-600 to-green-700',
-    bgColor: 'bg-green-200',
-    iconColor: 'text-green-600',
+    color: 'from-teal-600 to-teal-700',
+    bgColor: 'bg-teal-200',
+    iconColor: 'text-teal-600',
   },
   {
     icon: Lightbulb,
     title: 'IT Advisory (Decision-Safe Tech)',
     description: 'Make tech decisions with confidence. We help you choose what to build, what to buy, and what to fix first — with a clear ROI lens.',
-    color: 'from-green-700 to-green-900',
-    bgColor: 'bg-green-200',
-    iconColor: 'text-green-600',
+    color: 'from-teal-700 to-teal-900',
+    bgColor: 'bg-teal-200',
+    iconColor: 'text-teal-600',
   },
 ];
 
@@ -84,7 +84,7 @@ export default function ServicesPreview() {
                 </p>
                 <Link
                   to={createPageUrl('Services')}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-green-700 hover:text-green-800 group-hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-teal-700 hover:text-teal-800 group-hover:gap-3 transition-all"
                 >
                   Learn more
                   <ArrowRight className="w-4 h-4" />

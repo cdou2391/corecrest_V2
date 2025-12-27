@@ -34,8 +34,8 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
       <style>{`
         :root {
           --primary: #0f172a;
-          --accent: #16a34a;
-          --accent-secondary: #22c55e;
+          --accent: #0d9488;
+          --accent-secondary: #14b8a6;
           --background: 0 0% 100%;
           --foreground: 222.2 84% 4.9%;
           --card: 0 0% 100%;
@@ -55,13 +55,13 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
           --ring: 222.2 84% 4.9%;
         }
         .gradient-text {
-          background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+          background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
         }
         .gradient-bg {
-          background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+          background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
         }
         .gradient-border {
           position: relative;
@@ -72,7 +72,7 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
           inset: 0;
           border-radius: inherit;
           padding: 2px;
-          background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+          background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
           -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
           mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
           -webkit-mask-composite: xor;
@@ -113,9 +113,9 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
                 <Link
                   key={link.page}
                   to={createPageUrl(link.page)}
-                  className={`text-sm font-medium transition-colors hover:text-green-600 ${
+                  className={`text-sm font-medium transition-colors hover:text-teal-600 ${
                     currentPageName === link.page
-                      ? 'text-green-600'
+                      ? 'text-teal-600'
                       : 'text-slate-700'
                   }`}
                 >
@@ -162,7 +162,7 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
                     onClick={() => setMobileMenuOpen(false)}
                     className={`block px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                       currentPageName === link.page
-                        ? 'bg-green-50 text-green-700'
+                        ? 'bg-teal-50 text-teal-700'
                         : 'text-slate-700 hover:bg-slate-50'
                     }`}
                   >
@@ -213,7 +213,7 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
                   <li key={link.page}>
                     <Link
                       to={createPageUrl(link.page)}
-                      className="text-slate-400 hover:text-green-600 transition-colors text-sm"
+                      className="text-slate-400 hover:text-teal-600 transition-colors text-sm"
                     >
                       {link.name}
                     </Link>
@@ -227,22 +227,22 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
               <h4 className="font-semibold text-lg mb-6">Services</h4>
               <ul className="space-y-3">
                 <li>
-                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-green-600 transition-colors text-sm">
+                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-teal-600 transition-colors text-sm">
                     Websites That Convert
                   </Link>
                 </li>
                 <li>
-                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-green-600 transition-colors text-sm">
+                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-teal-600 transition-colors text-sm">
                     Custom Web Apps & Internal Tools
                   </Link>
                 </li>
                 <li>
-                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-green-600 transition-colors text-sm">
+                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-teal-600 transition-colors text-sm">
                     Automation & Integrations
                   </Link>
                 </li>
                 <li>
-                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-green-600 transition-colors text-sm">
+                  <Link to={createPageUrl('Services')} className="text-slate-400 hover:text-teal-600 transition-colors text-sm">
                     IT Advisory (Decision-Safe Tech)
                   </Link>
                 </li>
@@ -254,18 +254,18 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
               <h4 className="font-semibold text-lg mb-6">Contact Us</h4>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
                   <span className="text-slate-400 text-sm">Kigali, Rwanda</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <a href="tel:+250788863783" className="text-slate-400 hover:text-green-600 transition-colors text-sm">
+                  <Phone className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                  <a href="tel:+250788863783" className="text-slate-400 hover:text-teal-600 transition-colors text-sm">
                     +250 788 863 783
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <a href="mailto:info@corecrest.tech" className="text-slate-400 hover:text-green-600 transition-colors text-sm">
+                  <Mail className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                  <a href="mailto:info@corecrest.tech" className="text-slate-400 hover:text-teal-600 transition-colors text-sm">
                     info@corecrest.tech
                   </a>
                 </li>
@@ -278,10 +278,10 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
               © {new Date().getFullYear()} CoreCrest. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
-              <Link to={createPageUrl('PrivacyPolicy')} className="text-slate-500 hover:text-green-600 transition-colors text-sm">
+              <Link to={createPageUrl('PrivacyPolicy')} className="text-slate-500 hover:text-teal-600 transition-colors text-sm">
                 Privacy Policy
               </Link>
-              <Link to={createPageUrl('TermsOfService')} className="text-slate-500 hover:text-green-600 transition-colors text-sm">
+              <Link to={createPageUrl('TermsOfService')} className="text-slate-500 hover:text-teal-600 transition-colors text-sm">
                 Terms of Service
               </Link>
             </div>

@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
   ];
 
   return (
-    <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50/30">
+    <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
         <motion.div
@@ -140,7 +140,7 @@ export default function PrivacyPolicy() {
             </ul>
             <p className="mt-4">
               To exercise these rights, please contact us at{' '}
-              <a href="mailto:info@corecrest.tech" className="text-green-600 hover:underline font-medium">
+              <a href="mailto:info@corecrest.tech" className="text-teal-600 hover:underline font-medium">
                 info@corecrest.tech
               </a>
             </p>
@@ -197,7 +197,7 @@ export default function PrivacyPolicy() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.0 }}
-          className="bg-gradient-to-br from-green-50 to-slate-50 rounded-3xl shadow-lg border border-green-100 p-8 md:p-10 mt-6"
+          className="bg-gradient-to-br from-teal-50 to-slate-50 rounded-3xl shadow-lg border border-teal-100 p-8 md:p-10 mt-6"
         >
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Contact Us</h2>
           <p className="text-slate-700 leading-relaxed mb-4">
@@ -206,13 +206,13 @@ export default function PrivacyPolicy() {
           <div className="space-y-2 text-slate-700">
             <p>
               <strong>Email:</strong>{' '}
-              <a href="mailto:info@corecrest.tech" className="text-green-600 hover:underline">
+              <a href="mailto:info@corecrest.tech" className="text-teal-600 hover:underline">
                 info@corecrest.tech
               </a>
             </p>
             <p>
               <strong>Phone:</strong>{' '}
-              <a href="tel:+250788863783" className="text-green-600 hover:underline">
+              <a href="tel:+250788863783" className="text-teal-600 hover:underline">
                 +250 788 863 783
               </a>
             </p>

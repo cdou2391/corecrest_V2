@@ -113,8 +113,8 @@ export function SelectItem({ className, value, children, ...props }: SelectItemP
   return (
     <div
       className={cn(
-        'relative flex w-full cursor-pointer select-none items-center rounded-sm py-1.5 px-2 text-sm outline-none hover:bg-green-50 hover:text-slate-900 focus:bg-green-50 focus:text-slate-900 data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
-        context.value === value && 'bg-green-100 text-slate-900',
+        'relative flex w-full cursor-pointer select-none items-center rounded-sm py-1.5 px-2 text-sm outline-none hover:bg-teal-50 hover:text-slate-900 focus:bg-teal-50 focus:text-slate-900 data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+        context.value === value && 'bg-teal-100 text-slate-900',
         className
       )}
       onClick={() => {
