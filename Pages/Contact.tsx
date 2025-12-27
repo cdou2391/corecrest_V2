@@ -44,31 +44,31 @@ export default function Contact() {
       // Prepare the email body (formatted for better readability)
       const emailSubject = `Website Inquiry: ${formData.subject}`;
       const emailBody = `<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-    <div style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
+    <div style="background: linear-gradient(135deg, #0d9488, #0f766e); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
         <h1 style="margin: 0; font-size: 24px; font-weight: bold;">NEW CONTACT FORM SUBMISSION</h1>
     </div>
     
     <div style="background: #f8f9fa; padding: 20px; border: 1px solid #e9ecef; border-top: none;">
         <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">CLIENT INFORMATION</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">CLIENT INFORMATION</h2>
             <table style="width: 100%; border-collapse: collapse;">
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Name:</td><td style="padding: 8px 0;">${formData.name}</td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Email:</td><td style="padding: 8px 0;"><a href="mailto:${formData.email}" style="color: #16a34a; text-decoration: none;">${formData.email}</a></td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Subject:</td><td style="padding: 8px 0; background: #dcfce7; padding: 8px; border-radius: 4px; color: #15803d;">${formData.subject}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Email:</td><td style="padding: 8px 0;"><a href="mailto:${formData.email}" style="color: #0d9488; text-decoration: none;">${formData.email}</a></td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Subject:</td><td style="padding: 8px 0; background: #dcfce7; padding: 8px; border-radius: 4px; color: #0f766e;">${formData.subject}</td></tr>
             </table>
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">MESSAGE DETAILS</h2>
-            <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #16a34a; white-space: pre-wrap;">${formData.message.replace(/\n/g, '<br>')}</div>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">MESSAGE DETAILS</h2>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #0d9488; white-space: pre-wrap;">${formData.message.replace(/\n/g, '<br>')}</div>
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">SUBMISSION DETAILS</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">SUBMISSION DETAILS</h2>
             <table style="width: 100%; border-collapse: collapse;">
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Submission Time:</td><td style="padding: 8px 0;">${new Date().toLocaleString()}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Source:</td><td style="padding: 8px 0;">CoreCrest Website Contact Form</td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Priority:</td><td style="padding: 8px 0; background: #dcfce7; color: #15803d; padding: 4px 8px; border-radius: 4px; display: inline-block;">Normal</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Priority:</td><td style="padding: 8px 0; background: #dcfce7; color: #0f766e; padding: 4px 8px; border-radius: 4px; display: inline-block;">Normal</td></tr>
             </table>
         </div>
     </div>
@@ -108,7 +108,7 @@ export default function Contact() {
       // Send confirmation email to the user
       const confirmationSubject = 'Thank you for contacting CoreCrest';
       const confirmationBody = `<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-    <div style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
+    <div style="background: linear-gradient(135deg, #0d9488, #0f766e); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
         <h1 style="margin: 0; font-size: 24px; font-weight: bold;">Thank You for Contacting CoreCrest</h1>
     </div>
     
@@ -119,7 +119,7 @@ export default function Contact() {
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">YOUR MESSAGE SUMMARY</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">YOUR MESSAGE SUMMARY</h2>
             <table style="width: 100%; border-collapse: collapse;">
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Subject:</td><td style="padding: 8px 0;">${formData.subject}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Submitted:</td><td style="padding: 8px 0;">${new Date().toLocaleString()}</td></tr>
@@ -127,15 +127,15 @@ export default function Contact() {
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">WHAT HAPPENS NEXT?</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">WHAT HAPPENS NEXT?</h2>
             <p style="color: #1e293b; font-size: 14px; margin: 0 0 10px 0;">Our team will review your message and respond to you at <strong>${formData.email}</strong> within 24 hours.</p>
-            <p style="color: #1e293b; font-size: 14px; margin: 0;">If you have any urgent questions, feel free to call us at <a href="tel:+250788863783" style="color: #16a34a; text-decoration: none;">+250 788 863 783</a>.</p>
+            <p style="color: #1e293b; font-size: 14px; margin: 0;">If you have any urgent questions, feel free to call us at <a href="tel:+250788863783" style="color: #0d9488; text-decoration: none;">+250 788 863 783</a>.</p>
         </div>
     </div>
     
     <div style="background: #1e293b; color: white; padding: 15px; border-radius: 0 0 8px 8px; text-align: center; font-size: 12px;">
         <p style="margin: 0;">CoreCrest - Practical Tech Solutions for Small Businesses</p>
-        <p style="margin: 5px 0 0 0;">Kigali, Rwanda | <a href="mailto:info@corecrest.tech" style="color: #16a34a; text-decoration: none;">info@corecrest.tech</a></p>
+        <p style="margin: 5px 0 0 0;">Kigali, Rwanda | <a href="mailto:info@corecrest.tech" style="color: #0d9488; text-decoration: none;">info@corecrest.tech</a></p>
     </div>
 </div>`;
 
@@ -219,7 +219,7 @@ export default function Contact() {
         canonicalUrl="https://corecrest.tech/contact"
       />
       {isSubmitted ? (
-        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-200/30 flex items-center justify-center">
+        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-200/30 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -247,7 +247,7 @@ export default function Contact() {
         </motion.div>
       </div>
       ) : (
-        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-200/30">
+        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-200/30">
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -257,7 +257,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               Contact Us
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4 mb-6">
@@ -380,7 +380,7 @@ export default function Contact() {
                       {item.link ? (
                         <a
                           href={item.link}
-                          className="text-slate-600 hover:text-green-600 transition-colors"
+                          className="text-slate-600 hover:text-teal-600 transition-colors"
                         >
                           {item.content}
                         </a>
@@ -439,7 +439,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               FAQ
             </span>
             <h2 className="text-3xl font-bold text-slate-900 mt-4">

@@ -84,41 +84,41 @@ export default function BookConsultation() {
       const formattedDate = formData.preferred_date ? format(formData.preferred_date, 'MMMM d, yyyy') : 'Not specified';
       
       const emailBody = `<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-    <div style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
+    <div style="background: linear-gradient(135deg, #0d9488, #0f766e); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
         <h1 style="margin: 0; font-size: 24px; font-weight: bold;">NEW GROWTH DIAGNOSTIC BOOKING</h1>
     </div>
     
     <div style="background: #f8f9fa; padding: 20px; border: 1px solid #e9ecef; border-top: none;">
         <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">CLIENT INFORMATION</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">CLIENT INFORMATION</h2>
             <table style="width: 100%; border-collapse: collapse;">
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Name:</td><td style="padding: 8px 0;">${formData.full_name}</td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Email:</td><td style="padding: 8px 0;"><a href="mailto:${formData.email}" style="color: #16a34a; text-decoration: none;">${formData.email}</a></td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Phone:</td><td style="padding: 8px 0;"><a href="tel:${formData.phone}" style="color: #16a34a; text-decoration: none;">${formData.phone}</a></td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Email:</td><td style="padding: 8px 0;"><a href="mailto:${formData.email}" style="color: #0d9488; text-decoration: none;">${formData.email}</a></td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Phone:</td><td style="padding: 8px 0;"><a href="tel:${formData.phone}" style="color: #0d9488; text-decoration: none;">${formData.phone}</a></td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Company:</td><td style="padding: 8px 0;">${formData.company || 'Not provided'}</td></tr>
             </table>
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">CONSULTATION DETAILS</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">CONSULTATION DETAILS</h2>
             <table style="width: 100%; border-collapse: collapse;">
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Service Interest:</td><td style="padding: 8px 0; background: #dcfce7; padding: 8px; border-radius: 4px; color: #15803d;">${serviceLabel}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Service Interest:</td><td style="padding: 8px 0; background: #dcfce7; padding: 8px; border-radius: 4px; color: #0f766e;">${serviceLabel}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Preferred Date:</td><td style="padding: 8px 0;">${formattedDate}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Preferred Time:</td><td style="padding: 8px 0;">${formData.preferred_time} (Rwanda Time)</td></tr>
             </table>
         </div>
         
         ${formData.project_details ? `<div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">PROJECT DESCRIPTION</h2>
-            <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #16a34a; white-space: pre-wrap;">${formData.project_details.replace(/\n/g, '<br>')}</div>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">PROJECT DESCRIPTION</h2>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #0d9488; white-space: pre-wrap;">${formData.project_details.replace(/\n/g, '<br>')}</div>
         </div>` : ''}
         
         <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">SUBMISSION DETAILS</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">SUBMISSION DETAILS</h2>
             <table style="width: 100%; border-collapse: collapse;">
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Submission Time:</td><td style="padding: 8px 0;">${new Date().toLocaleString()}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Source:</td><td style="padding: 8px 0;">CoreCrest Growth Diagnostic Booking</td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Priority:</td><td style="padding: 8px 0; background: #dcfce7; color: #15803d; padding: 4px 8px; border-radius: 4px; display: inline-block;">High</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Priority:</td><td style="padding: 8px 0; background: #dcfce7; color: #0f766e; padding: 4px 8px; border-radius: 4px; display: inline-block;">High</td></tr>
             </table>
         </div>
     </div>
@@ -158,7 +158,7 @@ export default function BookConsultation() {
       // Send confirmation email to the user
       const confirmationSubject = `Growth Diagnostic Confirmation - ${serviceLabel}`;
       const confirmationBody = `<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-    <div style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
+    <div style="background: linear-gradient(135deg, #0d9488, #0f766e); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
         <h1 style="margin: 0; font-size: 24px; font-weight: bold;">Growth Diagnostic Booked!</h1>
     </div>
     
@@ -170,9 +170,9 @@ export default function BookConsultation() {
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">YOUR DIAGNOSTIC DETAILS</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">YOUR DIAGNOSTIC DETAILS</h2>
             <table style="width: 100%; border-collapse: collapse;">
-                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Service Interest:</td><td style="padding: 8px 0; background: #dcfce7; padding: 8px; border-radius: 4px; color: #15803d;">${serviceLabel}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b; width: 30%;">Service Interest:</td><td style="padding: 8px 0; background: #dcfce7; padding: 8px; border-radius: 4px; color: #0f766e;">${serviceLabel}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Preferred Date:</td><td style="padding: 8px 0;">${formattedDate}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Preferred Time:</td><td style="padding: 8px 0;">${formData.preferred_time} (Rwanda Time)</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold; color: #1e293b;">Submitted:</td><td style="padding: 8px 0;">${new Date().toLocaleString()}</td></tr>
@@ -180,7 +180,7 @@ export default function BookConsultation() {
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">WHAT HAPPENS NEXT?</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">WHAT HAPPENS NEXT?</h2>
             <p style="color: #1e293b; font-size: 14px; margin: 0 0 10px 0;">Our team will review your request and send you a confirmation email within 24 hours with:</p>
             <ul style="color: #1e293b; font-size: 14px; margin: 0; padding-left: 20px;">
                 <li>Confirmed appointment date and time</li>
@@ -190,18 +190,18 @@ export default function BookConsultation() {
         </div>
         
         <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: #16a34a; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #16a34a; padding-bottom: 8px;">NEED TO MAKE CHANGES?</h2>
+            <h2 style="color: #0d9488; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #0d9488; padding-bottom: 8px;">NEED TO MAKE CHANGES?</h2>
             <p style="color: #1e293b; font-size: 14px; margin: 0 0 10px 0;">If you need to reschedule or have any questions, please contact us:</p>
             <p style="color: #1e293b; font-size: 14px; margin: 0;">
-                Email: <a href="mailto:info@corecrest.tech" style="color: #16a34a; text-decoration: none;">info@corecrest.tech</a><br>
-                Phone: <a href="tel:+250788863783" style="color: #16a34a; text-decoration: none;">+250 788 863 783</a>
+                Email: <a href="mailto:info@corecrest.tech" style="color: #0d9488; text-decoration: none;">info@corecrest.tech</a><br>
+                Phone: <a href="tel:+250788863783" style="color: #0d9488; text-decoration: none;">+250 788 863 783</a>
             </p>
         </div>
     </div>
     
     <div style="background: #1e293b; color: white; padding: 15px; border-radius: 0 0 8px 8px; text-align: center; font-size: 12px;">
         <p style="margin: 0;">CoreCrest - Practical Tech Solutions for Small Businesses</p>
-        <p style="margin: 5px 0 0 0;">Kigali, Rwanda | <a href="mailto:info@corecrest.tech" style="color: #16a34a; text-decoration: none;">info@corecrest.tech</a></p>
+        <p style="margin: 5px 0 0 0;">Kigali, Rwanda | <a href="mailto:info@corecrest.tech" style="color: #0d9488; text-decoration: none;">info@corecrest.tech</a></p>
     </div>
 </div>`;
 
@@ -258,7 +258,7 @@ export default function BookConsultation() {
         canonicalUrl="https://corecrest.tech/book-consultation"
       />
       {isSubmitted ? (
-        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50/30">
+        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
           <div className="max-w-2xl mx-auto px-4 py-24 text-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -276,7 +276,7 @@ export default function BookConsultation() {
                 and will confirm your appointment shortly. You'll receive an email confirmation 
                 at <span className="font-medium text-slate-900">{formData.email}</span>.
               </p>
-              <div className="bg-gradient-to-br from-green-50 to-slate-50 rounded-2xl p-6 text-left mb-8 border border-green-100">
+              <div className="bg-gradient-to-br from-teal-50 to-slate-50 rounded-2xl p-6 text-left mb-8 border border-teal-100">
                 <h3 className="font-semibold text-slate-900 mb-4">Your Diagnostic Details</h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
@@ -299,7 +299,7 @@ export default function BookConsultation() {
               </div>
               <p className="text-sm text-slate-500">
                 Questions? Contact us at{' '}
-                <a href="mailto:info@corecrest.tech" className="text-green-600 hover:underline">
+                <a href="mailto:info@corecrest.tech" className="text-teal-600 hover:underline">
                   info@corecrest.tech
                 </a>
               </p>
@@ -307,7 +307,7 @@ export default function BookConsultation() {
           </div>
         </div>
       ) : (
-        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50/30">
+        <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -349,7 +349,7 @@ export default function BookConsultation() {
                         value={formData.full_name}
                         onChange={(e) => setFormData({ ...formData, full_name: e.target.value })}
                         placeholder="John Doe"
-                        className={`h-12 ${errors.full_name ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-green-500 focus:ring-green-500'}`}
+                        className={`h-12 ${errors.full_name ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-teal-500 focus:ring-teal-500'}`}
                       />
                       {errors.full_name && (
                         <p className="text-red-500 text-sm flex items-center gap-1">
@@ -367,7 +367,7 @@ export default function BookConsultation() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="john@company.com"
-                        className={`h-12 ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-green-500 focus:ring-green-500'}`}
+                        className={`h-12 ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-teal-500 focus:ring-teal-500'}`}
                       />
                       {errors.email && (
                         <p className="text-red-500 text-sm flex items-center gap-1">
@@ -387,7 +387,7 @@ export default function BookConsultation() {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="+250 788 123 456"
-                        className={`h-12 ${errors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-green-500 focus:ring-green-500'}`}
+                        className={`h-12 ${errors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-teal-500 focus:ring-teal-500'}`}
                       />
                       {errors.phone && (
                         <p className="text-red-500 text-sm flex items-center gap-1">
@@ -404,7 +404,7 @@ export default function BookConsultation() {
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         placeholder="Your company name"
-                        className="h-12 focus:border-green-500 focus:ring-green-500"
+                        className="h-12 focus:border-teal-500 focus:ring-teal-500"
                       />
                     </div>
                   </div>
@@ -425,7 +425,7 @@ export default function BookConsultation() {
                       value={formData.service_interest}
                       onValueChange={(value) => setFormData({ ...formData, service_interest: value })}
                     >
-                      <SelectTrigger className={`h-12 ${errors.service_interest ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-green-500 focus:ring-green-500'}`}>
+                      <SelectTrigger className={`h-12 ${errors.service_interest ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-teal-500 focus:ring-teal-500'}`}>
                         {formData.service_interest ? (
                           <span className="text-slate-900">
                             {services.find(s => s.value === formData.service_interest)?.label || formData.service_interest}
@@ -460,7 +460,7 @@ export default function BookConsultation() {
                             variant="outline"
                             className={`w-full h-12 justify-start text-left font-normal border-2 ${
                               !formData.preferred_date && 'text-slate-400'
-                            } ${errors.preferred_date ? 'border-red-500 focus:border-red-500' : 'focus:border-green-500'}`}
+                            } ${errors.preferred_date ? 'border-red-500 focus:border-red-500' : 'focus:border-teal-500'}`}
                           >
                             <CalendarIcon className="mr-2 h-4 w-4" />
                             {formData.preferred_date ? (
@@ -470,7 +470,7 @@ export default function BookConsultation() {
                             )}
                           </Button>
                         </PopoverTrigger>
-                        <PopoverContent className="w-auto p-0" align="start">
+                        <PopoverContent className="w-auto p-0 bg-white" align="start">
                           <Calendar
                             selected={formData.preferred_date}
                             onSelect={(date: Date | undefined) => setFormData({ ...formData, preferred_date: date })}
@@ -491,7 +491,7 @@ export default function BookConsultation() {
                         value={formData.preferred_time}
                         onValueChange={(value) => setFormData({ ...formData, preferred_time: value })}
                       >
-                        <SelectTrigger className={`h-12 ${errors.preferred_time ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-green-500 focus:ring-green-500'}`}>
+                        <SelectTrigger className={`h-12 ${errors.preferred_time ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'focus:border-teal-500 focus:ring-teal-500'}`}>
                           <div className="flex items-center">
                             <Clock className="mr-2 h-4 w-4 text-slate-400" />
                             <SelectValue placeholder="Select time" />
@@ -529,7 +529,7 @@ export default function BookConsultation() {
                     value={formData.project_details}
                     onChange={(e) => setFormData({ ...formData, project_details: e.target.value })}
                     placeholder="Tell us about your current challenges, goals, or what you'd like to discuss..."
-                    className="min-h-[140px] resize-none focus:border-green-500 focus:ring-green-500"
+                    className="min-h-[140px] resize-none focus:border-teal-500 focus:ring-teal-500"
                   />
                   <p className="text-xs text-slate-400">This helps us prepare relevant questions and examples for our call.</p>
                 </div>
@@ -538,7 +538,7 @@ export default function BookConsultation() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full gradient-bg text-white py-6 text-lg font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-green-600/25"
+                    className="w-full gradient-bg text-white py-6 text-lg font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-teal-600/25"
                   >
                     {isSubmitting ? (
                       <>
@@ -612,18 +612,18 @@ export default function BookConsultation() {
                   <div className="space-y-3">
                     <a
                       href="tel:+250788863783"
-                      className="flex items-center gap-3 text-slate-300 hover:text-green-400 transition-colors group"
+                      className="flex items-center gap-3 text-slate-300 hover:text-teal-400 transition-colors group"
                     >
-                      <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-green-600/20 transition-colors">
+                      <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-teal-600/20 transition-colors">
                         <Phone className="w-5 h-5" />
                       </div>
                       <span className="text-sm">+250 788 863 783</span>
                     </a>
                     <a
                       href="mailto:info@corecrest.tech"
-                      className="flex items-center gap-3 text-slate-300 hover:text-green-400 transition-colors group"
+                      className="flex items-center gap-3 text-slate-300 hover:text-teal-400 transition-colors group"
                     >
-                      <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-green-600/20 transition-colors">
+                      <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-teal-600/20 transition-colors">
                         <Mail className="w-5 h-5" />
                       </div>
                       <span className="text-sm">info@corecrest.tech</span>

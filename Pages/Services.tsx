@@ -16,7 +16,7 @@ const services = [
     title: 'Websites That Convert',
     subtitle: 'Small Business Website Design That Converts Visitors into Customers',
     description: 'Get a website that turns visitors into enquiries, bookings, or sales — built around your customer journey, not just design. We focus on what drives results: clear calls-to-action, fast loading times, and a user experience that guides visitors to take action. Small business website design that converts visitors into customers and generates more qualified leads for your business.',
-    color: 'from-green-600 to-green-700',
+    color: 'from-teal-600 to-teal-700',
     features: [
       { icon: Search, text: 'Built around your customer journey, not just design' },
       { icon: Smartphone, text: 'Mobile-first so customers can engage anywhere' },
@@ -39,7 +39,7 @@ const services = [
     title: 'Automation & Integrations',
     subtitle: 'Business Automation & Tool Integrations for SMEs',
     description: 'Connect the tools you already use and automate repetitive tasks so your team can focus on work that actually grows the business. We help you eliminate manual work, reduce errors, and create workflows that save time and money. Business automation and tool integrations for SMEs that streamline operations and improve operational efficiency.',
-    color: 'from-green-700 to-green-800',
+    color: 'from-teal-700 to-teal-800',
     features: [
       { icon: Zap, text: 'Connect your existing tools (CRM, email, payment systems)' },
       { icon: RefreshCw, text: 'Automate repetitive tasks and workflows' },
@@ -62,7 +62,7 @@ const services = [
     title: 'Custom Web Apps & Internal Tools',
     subtitle: 'Custom Internal Tools & Web Applications for Business Efficiency',
     description: 'Replace spreadsheets, email chains, and manual processes with simple tools that save time and reduce mistakes. We build internal tools that your team will actually use — no over-engineering, just practical solutions that solve real problems. Custom internal tools and web applications for business efficiency that help small businesses manage operations better.',
-    color: 'from-green-600 to-green-800',
+    color: 'from-teal-600 to-teal-800',
     features: [
       { icon: Code2, text: 'Replace Excel-based processes with proper tools' },
       { icon: Database, text: 'Centralize data so everyone has visibility' },
@@ -85,7 +85,7 @@ const services = [
     title: 'IT Advisory (Decision-Safe Tech)',
     subtitle: 'Technology Strategy & Advisory for Small Businesses',
     description: 'Make tech decisions with confidence. We help you choose what to build, what to buy, and what to fix first — with a clear ROI lens. Get practical advice that reduces risk and ensures you\'re investing in the right solutions. Technology strategy and advisory for small businesses that prioritize improvements by ROI and help you make decision-safe tech choices.',
-    color: 'from-green-700 to-green-900',
+    color: 'from-teal-700 to-teal-900',
     features: [
       { icon: Lightbulb, text: 'Build vs buy vs automate decisions' },
       { icon: BarChart3, text: 'Prioritize improvements by ROI' },
@@ -120,8 +120,8 @@ export default function Services() {
       />
       <div className="pt-24">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-slate-50 via-white to-green-50/30 overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-green-600/10 to-green-700/10 rounded-full blur-3xl" />
+      <section className="relative py-24 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-teal-600/10 to-teal-700/10 rounded-full blur-3xl" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -130,7 +130,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               What We Do
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4 mb-6">
@@ -170,7 +170,7 @@ export default function Services() {
                     <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">
                       {service.title}
                     </h2>
-                    <h3 className="text-lg text-green-600 font-medium mb-4">
+                    <h3 className="text-lg text-teal-600 font-medium mb-4">
                       {service.subtitle}
                     </h3>
                     <p className="text-slate-600 leading-relaxed mb-8">
@@ -195,7 +195,7 @@ export default function Services() {
                       <ul className="space-y-2">
                         {service.useCases.map((useCase, idx) => (
                           <li key={idx} className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
+                            <CheckCircle className="w-5 h-5 text-teal-700 flex-shrink-0" />
                             <span className="text-slate-600">{useCase}</span>
                           </li>
                         ))}
@@ -238,7 +238,7 @@ export default function Services() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-semibold text-green-600 tracking-wide uppercase">
+            <span className="text-sm font-semibold text-teal-600 tracking-wide uppercase">
               Our Process
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4">
@@ -271,7 +271,7 @@ export default function Services() {
                   {item.desc}
                 </p>
                 {index < 3 && (
-                  <ArrowRight className="hidden md:block absolute top-8 -right-4 w-8 h-8 text-green-700/30" />
+                  <ArrowRight className="hidden md:block absolute top-8 -right-4 w-8 h-8 text-teal-700/30" />
                 )}
               </motion.div>
             ))}
@@ -299,7 +299,7 @@ export default function Services() {
             </p>
             <Link
               to={createPageUrl('BookConsultation')}
-              className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-green-700/25"
+              className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-teal-700/25"
             >
               Get a 2-Week Growth Diagnostic
               <ArrowRight className="w-5 h-5" />
