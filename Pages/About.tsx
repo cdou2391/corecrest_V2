@@ -47,6 +47,14 @@ export default function About() {
         twitterTitle="About CoreCrest - Practical Tech Solutions for Small Businesses | Rwanda"
         twitterDescription="CoreCrest helps small businesses fix tech weak points that cost customers, time, and money. Based in Kigali, Rwanda."
         canonicalUrl="https://corecrest.tech/about"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://corecrest.tech" },
+            { "@type": "ListItem", "position": 2, "name": "About", "item": "https://corecrest.tech/about" }
+          ]
+        }}
       />
       <div className="pt-24">
       {/* Hero Section */}
@@ -87,6 +95,7 @@ export default function About() {
               <img
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop"
                 alt="CoreCrest team collaborating on website development and technology solutions for small businesses in Rwanda"
+                loading="lazy"
                 className="rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl">
@@ -178,6 +187,7 @@ export default function About() {
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
                 alt="Strategic planning and innovation for small business technology solutions in Rwanda"
+                loading="lazy"
                 className="rounded-3xl shadow-xl"
               />
             </motion.div>

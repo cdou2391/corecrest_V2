@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileText, Scale, AlertCircle, CheckCircle, XCircle } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function TermsOfService() {
   const sections = [
@@ -65,6 +66,16 @@ export default function TermsOfService() {
   ];
 
   return (
+    <>
+      <SEO
+        title="Terms of Service | CoreCrest"
+        description="Read CoreCrest's terms of service. Understand the conditions governing use of our website and software development services in Rwanda."
+        keywords="CoreCrest terms of service, terms and conditions, software services Rwanda, website usage terms"
+        ogTitle="Terms of Service | CoreCrest"
+        ogDescription="Read CoreCrest's terms of service governing use of our website and software development services."
+        ogUrl="https://corecrest.tech/terms-of-service"
+        canonicalUrl="https://corecrest.tech/terms-of-service"
+      />
     <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
@@ -271,6 +282,7 @@ export default function TermsOfService() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }
 

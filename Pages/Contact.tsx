@@ -217,6 +217,69 @@ export default function Contact() {
         twitterTitle="Contact CoreCrest - Get in Touch | Software Company Rwanda"
         twitterDescription="Contact CoreCrest for website development, SaaS solutions, and custom web applications. Located in Kigali, Rwanda."
         canonicalUrl="https://corecrest.tech/contact"
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "CoreCrest",
+            "url": "https://corecrest.tech",
+            "telephone": "+250788863783",
+            "email": "info@corecrest.tech",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kigali",
+              "addressCountry": "RW"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "18:00"
+            },
+            "priceRange": "$$",
+            "areaServed": "Rwanda",
+            "description": "CoreCrest is a software company in Kigali, Rwanda providing website development, SaaS solutions, automation, and IT advisory services for small businesses.",
+            "logo": "https://corecrest.tech/logo.png",
+            "sameAs": [
+              "https://www.linkedin.com/company/corecrest",
+              "https://twitter.com/CoreCrestTech"
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://corecrest.tech" },
+              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://corecrest.tech/contact" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does it take to build a website?",
+                "acceptedAnswer": { "@type": "Answer", "text": "A typical website takes 2-4 weeks depending on complexity. We'll provide a detailed timeline during our initial consultation." }
+              },
+              {
+                "@type": "Question",
+                "name": "What is your pricing model?",
+                "acceptedAnswer": { "@type": "Answer", "text": "We offer project-based pricing tailored to your specific needs. Contact us for a free quote based on your requirements." }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide ongoing support?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes! We offer maintenance and support packages to keep your website or application running smoothly." }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you work with our existing systems?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We specialize in integrating with existing systems and can work with your current technology stack." }
+              }
+            ]
+          }
+        ]}
       />
       {isSubmitted ? (
         <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-200/30 flex items-center justify-center">
@@ -398,6 +461,7 @@ export default function Contact() {
                   <img
                     src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=400&fit=crop"
                     alt="CoreCrest office location in Kigali, Rwanda - software company providing website development and technology solutions"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-slate-900/30 flex items-center justify-center">

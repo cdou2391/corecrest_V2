@@ -117,6 +117,14 @@ export default function Services() {
         twitterTitle="Our Services - Website Development, SaaS & Web Apps for Small Businesses | CoreCrest"
         twitterDescription="Comprehensive technology solutions for small businesses in Rwanda: websites that convert, custom web apps, business automation, and IT advisory services."
         canonicalUrl="https://corecrest.tech/services"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://corecrest.tech" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://corecrest.tech/services" }
+          ]
+        }}
       />
       <div className="pt-24">
       {/* Hero Section */}
@@ -217,6 +225,7 @@ export default function Services() {
                       <img
                         src={service.image}
                         alt={`${service.title} - ${service.subtitle} for small businesses in Rwanda`}
+                        loading="lazy"
                         className="rounded-3xl shadow-2xl w-full"
                       />
                       <div className={`absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br ${service.color} rounded-2xl opacity-20 blur-2xl`} />

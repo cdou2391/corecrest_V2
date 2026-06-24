@@ -22,7 +22,7 @@ function App() {
         <Route path="/about" element={<Layout currentPageName="About"><About /></Layout>} />
         <Route path="/services" element={<Layout currentPageName="Services"><Services /></Layout>} />
         <Route path="/blog" element={<Layout currentPageName="Blog"><Blog /></Layout>} />
-        <Route path="/blog-post" element={<Layout currentPageName="BlogPost"><BlogPost /></Layout>} />
+        <Route path="/blog/:slug" element={<Layout currentPageName="BlogPost"><BlogPost /></Layout>} />
         <Route path="/contact" element={<Layout currentPageName="Contact"><Contact /></Layout>} />
         <Route path="/book-consultation" element={<Layout currentPageName="BookConsultation"><BookConsultation /></Layout>} />
         <Route path="/privacy-policy" element={<Layout><PrivacyPolicy /></Layout>} />

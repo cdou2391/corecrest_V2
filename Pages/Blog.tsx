@@ -50,6 +50,72 @@ const samplePosts = [
     created_date: new Date('2024-12-22'),
     published: true,
   },
+  {
+    id: '2',
+    title: 'How to Choose a Web Developer in Rwanda: 7 Questions to Ask Before You Sign',
+    slug: 'how-to-choose-web-developer-rwanda',
+    excerpt: 'Not all web developers are equal. Here are the 7 questions every Rwandan business owner should ask before hiring a developer — and the red flags to watch out for.',
+    author: 'CoreCrest Team',
+    category: 'web_design',
+    cover_image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    created_date: new Date('2025-02-10'),
+    published: true,
+  },
+  {
+    id: '3',
+    title: '5 Signs Your Small Business Needs Automation (And How to Start)',
+    slug: 'signs-your-business-needs-automation',
+    excerpt: 'If your team is copying data between spreadsheets, chasing unpaid invoices manually, or spending hours on tasks that repeat daily — automation could save you 10+ hours a week.',
+    author: 'CoreCrest Team',
+    category: 'technology',
+    cover_image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop',
+    created_date: new Date('2025-03-05'),
+    published: true,
+  },
+  {
+    id: '4',
+    title: 'Website vs WhatsApp: Which Should Your SME in Rwanda Invest In First?',
+    slug: 'website-vs-whatsapp-for-smes-rwanda',
+    excerpt: 'Many Rwandan SMEs run their entire business through WhatsApp. It works — until it doesn\'t. Here\'s an honest comparison to help you decide where to invest your digital budget first.',
+    author: 'CoreCrest Team',
+    category: 'web_design',
+    cover_image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=400&fit=crop',
+    created_date: new Date('2025-03-20'),
+    published: true,
+  },
+  {
+    id: '5',
+    title: 'What Is IT Advisory and Why Every Growing Business in Rwanda Needs It',
+    slug: 'what-is-it-advisory-rwanda',
+    excerpt: 'IT advisory isn\'t just for big corporations. Learn how small and medium businesses in Rwanda can avoid costly tech mistakes and make smarter technology decisions with the right guidance.',
+    author: 'CoreCrest Team',
+    category: 'it_strategy',
+    cover_image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+    created_date: new Date('2025-04-08'),
+    published: true,
+  },
+  {
+    id: '6',
+    title: 'How to Measure the ROI of Your Business Website in Rwanda',
+    slug: 'measure-website-roi-rwanda',
+    excerpt: 'Your website is not just a digital brochure — it should generate leads and revenue. Here\'s a practical framework for measuring whether your website is actually working for your business.',
+    author: 'CoreCrest Team',
+    category: 'technology',
+    cover_image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    created_date: new Date('2025-04-25'),
+    published: true,
+  },
+  {
+    id: '8',
+    title: 'When Does Your Business Need a Custom Web App? (vs Using Off-the-Shelf Tools)',
+    slug: 'when-does-your-business-need-custom-web-app',
+    excerpt: 'Trello, Notion, and Google Sheets are great — until your business outgrows them. Here\'s how to know when it\'s time to build a custom internal tool or web application.',
+    author: 'CoreCrest Team',
+    category: 'saas',
+    cover_image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop',
+    created_date: new Date('2025-05-12'),
+    published: true,
+  },
 ];
 
 export default function Blog() {
@@ -80,6 +146,28 @@ export default function Blog() {
         twitterTitle="CoreCrest Blog - Insights & Resources | Software Development Rwanda"
         twitterDescription="Stay updated with the latest trends, tips, and insights on technology, web development, SaaS, and digital transformation from CoreCrest."
         canonicalUrl="https://corecrest.tech/blog"
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "CoreCrest Blog",
+            "description": "Tech insights, guides, and resources for small businesses in Rwanda.",
+            "url": "https://corecrest.tech/blog",
+            "publisher": {
+              "@type": "Organization",
+              "name": "CoreCrest",
+              "logo": { "@type": "ImageObject", "url": "https://corecrest.tech/logo.png" }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://corecrest.tech" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://corecrest.tech/blog" }
+            ]
+          }
+        ]}
       />
       <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-200/30">
       {/* Hero Section */}
@@ -95,7 +183,7 @@ export default function Blog() {
               Our Blog
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4 mb-6">
-              Insights & <span className="gradient-text">Resources</span>
+              CoreCrest Blog — Tech Insights for <span className="gradient-text">Small Businesses in Rwanda</span>
             </h1>
             <p className="text-lg text-slate-600">
               Stay updated with the latest trends, tips, and insights on technology, 
@@ -111,13 +199,14 @@ export default function Blog() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mb-16"
             >
-              <Link to={createPageUrl('BlogPost') + `?slug=${featuredPost.slug}`}>
+              <Link to={`/blog/${featuredPost.slug}`}>
                 <div className="relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
                   <div className="grid md:grid-cols-2">
                     <div className="aspect-[4/3] md:aspect-auto">
                       <img
                         src={featuredPost.cover_image}
                         alt={featuredPost.title}
+                        loading="lazy"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -188,12 +277,13 @@ export default function Blog() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Link to={createPageUrl('BlogPost') + `?slug=${post.slug}`}>
+                <Link to={`/blog/${post.slug}`}>
                   <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all h-full flex flex-col">
                     <div className="aspect-[16/10] overflow-hidden">
                       <img
                         src={post.cover_image}
                         alt={post.title}
+                        loading="lazy"
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       />
                     </div>
