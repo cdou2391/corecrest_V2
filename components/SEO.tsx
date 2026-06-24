@@ -28,7 +28,7 @@ export default function SEO({
   keywords = "Best Software Company in Rwanda, Top IT Company Kigali, Website Development Rwanda, Tailored IT Solutions, SaaS Solutions, Web App Development, IT Services Rwanda, Software Development Rwanda, Custom Websites, Small Business Technology",
   ogTitle = "CoreCrest - Website Development & SaaS Solutions",
   ogDescription = "Rwanda's leading software company empowering businesses through innovative website development, SaaS solutions, and custom web applications with exceptional value and quality.",
-  ogImage = "/logo.png",
+  ogImage = "/og-image.png",
   ogUrl,
   ogType,
   ogPublishedTime,
@@ -62,7 +62,7 @@ export default function SEO({
       <meta property="og:title" content={ogTitle} />
       <meta property="og:description" content={ogDescription} />
       <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`} />
-      <meta property="og:type" content={ogType || (fullOgUrl.includes('/blog-post') ? 'article' : 'website')} />
+      <meta property="og:type" content={ogType || (fullOgUrl.includes('/blog/') && fullOgUrl.split('/blog/')[1] ? 'article' : 'website')} />
       <meta property="og:url" content={fullOgUrl} />
       <meta property="og:site_name" content="CoreCrest" />
       {ogPublishedTime && <meta property="article:published_time" content={ogPublishedTime} />}
@@ -71,6 +71,8 @@ export default function SEO({
 
       {/* Twitter Card data */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@CoreCrestTech" />
+      <meta name="twitter:creator" content="@CoreCrestTech" />
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <meta name="twitter:image" content={twitterImage.startsWith('http') ? twitterImage : `${baseUrl}${twitterImage}`} />

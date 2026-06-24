@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Lock, Eye, FileText } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function PrivacyPolicy() {
   const sections = [
@@ -54,6 +55,16 @@ export default function PrivacyPolicy() {
   ];
 
   return (
+    <>
+      <SEO
+        title="Privacy Policy | CoreCrest"
+        description="Read CoreCrest's privacy policy. Learn how we collect, use, and protect your personal data when you use our website and services."
+        keywords="CoreCrest privacy policy, data protection, personal information, Rwanda software company"
+        ogTitle="Privacy Policy | CoreCrest"
+        ogDescription="Read CoreCrest's privacy policy. Learn how we collect, use, and protect your personal data."
+        ogUrl="https://corecrest.tech/privacy-policy"
+        canonicalUrl="https://corecrest.tech/privacy-policy"
+      />
     <div className="pt-24 min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
@@ -223,6 +234,7 @@ export default function PrivacyPolicy() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }
 
